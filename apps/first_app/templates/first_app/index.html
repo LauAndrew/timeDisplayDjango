@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+            {% load static %}
+        <link rel="stylesheet" href="{% static 'first_app/main.css' %}" media="screen" title="no title"  charset="utf-8">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        {% csrf_token %}
+        <div class="line">{{time}}</div>
+        <div class="line">{{date}}</div>
+
+    </body>
+</html>
